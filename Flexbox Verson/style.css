@@ -1,109 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #412732;
+  font-family: "Helvetica neue";
+  border: none;
+  box-sizing: border-box;
+}
 
-  * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    color: #412732;
-    font-family: "Helvetica neue";
-    border: none;
-    box-sizing: border-box;
-  }
-  * input{
-    height: 20px;
-    border-radius: 2px;
+* input {
+  height: 20px;
+  border-radius: 2px;
+}
 
-  }
-   * textarea {
-     border-radius: 2px;
-     resize: none;
-   }
-  body {
-    background-color: #A16070;
-    padding: 1em;
-  }
-  .all {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-  }
-  .all h1 {
-    text-align: center;
-    margin: 0 0 0.5em 0;
-    font-weight: bolder;
-  }
-  .container {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-  }
-  span {
-    color: #DCD0D3;
-  }
+* textarea {
+  border-radius: 2px;
+  resize: none;
+}
 
-  ul li{
-    font-weight:normal;
-  }
-  .address {
-    background-color: #D08C98;
-    display: flex;
-    flex-direction: column;
-    height: 8em;
-    justify-content: space-evenly;
-    margin-top: 0;
-  }
-  .address div {
-    text-align: center;
-  }
+body {
+  background-color: #A16070;
+  padding: 1em;
+}
 
-  .form-container{
-    background-color: #DCD0D3;
-    padding: 1em;
-  }
-  .form-container h3 {
-    padding: 0 0 1em 0;
-  }
-  .form-container textarea {
-    width: 100%;
-  }
+.all {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
 
-  .form-nomsg {
-    display: flex;
-    justify-content: space-between;
-  }
-  .form-row {
-    width: 45%;
-  }
-  .form-row input{
-    width: 100%;
-  }
-  .form-row2 {
-    width: 45%;
-  }
-  .form-row2 input{
-    width: 100%;
-  }
-  .form-nomsg div label{
-    margin: 10px 0 0 0;
-  }
-  .form-nomsg div input{
-    margin: 0 0 10px 0;
-  }
-  .message textarea {
-    margin: 5px 0;
-  }
-  button {
-    display: block;
-    width: 100%;
-    margin: 10px 0 0 0;
-    height: auto;
-    padding: 10px;
-    background-color: #D08C98;
-    font-weight: bolder;
-    font-size: 20px;
+.all h1 {
+  text-align: center;
+  margin: 0 0 0.5em 0;
+  font-weight: bolder;
+}
 
-  }
+.container {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: #DCD0D3;
+}
+
+ul li {
+  font-weight: normal;
+}
+
+.address {
+  background-color: #D08C98;
+  display: flex;
+  flex-direction: column;
+  height: 8em;
+  justify-content: space-evenly;
+  margin-top: 0;
+}
+
+.address div {
+  text-align: center;
+}
+
+.form-container {
+  background-color: #DCD0D3;
+  padding: 1em;
+}
+
+.form-container h3 {
+  padding: 0 0 1em 0;
+}
+
+.form-container textarea {
+  width: 100%;
+}
+
+.form-nomsg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row {
+  width: 45%;
+}
+
+.form-row input {
+  width: 100%;
+}
+
+.form-row2 {
+  width: 45%;
+}
+
+.form-row2 input {
+  width: 100%;
+}
+
+.form-nomsg div label {
+  margin: 10px 0 0 0;
+}
+
+.form-nomsg div input {
+  margin: 0 0 10px 0;
+}
+
+.message textarea {
+  margin: 5px 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0 0;
+  height: auto;
+  padding: 10px;
+  background-color: #D08C98;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 @media(min-width:800px) {
   .container {
     background-color: #D08C98;
@@ -114,11 +131,13 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  .form-container{
+
+  .form-container {
     background-color: #DCD0D3;
     padding: 1em;
     flex-basis: 60%;
   }
+
   .address {
     background-color: #D08C98;
     display: flex;
