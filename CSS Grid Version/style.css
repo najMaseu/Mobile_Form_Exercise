@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  color: #1C1809;
+  font-family: "Helvetica neue";
+  box-sizing: border-box;
+}
+body {
+  background-color: #67420C;
+  padding: 1em;
+}
+span {
+  color: white;
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
+* h1, * h3 {
+  font-weight: bolder;
+}
+#header {
+margin-top: 0.5em;
+}
+
+#header {
+  text-align:  center;
+}
+.all {
+  background-color: #AC994A;
+  margin: 1em;
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+.contact {
+  background-color: #9F630B;
+  text-align: center;
+  display: grid;
+  align-content: space-evenly
+}
+.form {
+  padding: 1em;
+  display: grid;
+  grid-gap: 1em;
+}
+.form-meat {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+  "name phone"
+  "email company"
+  "message message"
+  "button button"
+}
+.box1 {
+  grid-area: name;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.box2 {
+  grid-area: phone;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+.box3 {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+.box4 {
+  grid-area: company;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  }
+.box-message{
+  grid-area: message;
+  }
+.button {
+  grid-area: button;
+  }
