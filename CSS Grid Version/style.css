@@ -7,81 +7,158 @@
   font-family: "Helvetica neue";
   box-sizing: border-box;
 }
+
 body {
   background-color: #67420C;
   padding: 1em;
 }
+
 span {
-  color: white;
+  color: #ede6ce;
 }
+
 textarea {
   width: 100%;
   resize: none;
 }
+
+* input {
+  height: 20px;
+  width: 100%;
+}
+
 * h1, * h3 {
   font-weight: bolder;
 }
-#header {
-margin-top: 0.5em;
+
+* input, * textarea {
+  margin: 0;
+  border: none;
+  border-radius: 2px;
+
+}
+
+label {
+  margin-bottom: 4px;
 }
 
 #header {
-  text-align:  center;
+  margin-top: 0.5em;
 }
+
+#header {
+  text-align: center;
+}
+
 .all {
   background-color: #AC994A;
-  margin: 1em;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+  margin: 1em 1em 0 1em;
   display: grid;
   grid-template-rows: 1fr 3fr;
 }
+
 .contact {
   background-color: #9F630B;
   text-align: center;
   display: grid;
   align-content: space-evenly
 }
+
 .form {
   padding: 1em;
   display: grid;
   grid-gap: 1em;
 }
+
 .form-meat {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-areas:
-  "name phone"
-  "email company"
-  "message message"
-  "button button"
+    "name phone"
+    "email company"
+    "message message"
+    "button button"
 }
+
 .box1 {
   grid-area: name;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
+
 .box2 {
   grid-area: phone;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  }
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .box3 {
   grid-area: email;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  }
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .box4 {
   grid-area: company;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  }
-.box-message{
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.box-message {
   grid-area: message;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .button {
   grid-area: button;
+  margin: 10px 0 0 0;
+  height: auto;
   }
+
+  .button button {
+    width: 100%;
+    background-color: #9F630B;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+
+  }
+
+@media (min-width: 800px) {
+  .all {
+    background-color: #AC994A;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+    margin: 2em 1em 0 1em;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    "contact form"
+    "contact form"
+
+  }
+  .form {
+    grid-area: form;
+  }
+  .contact {
+    grid-area: contact;
+    display: grid;
+    align-content: center;
+    grid-gap: 20px;
+  }
+}
